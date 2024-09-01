@@ -1393,7 +1393,7 @@ p {
   width: 260px;
   height: 350px;
   border-radius: 10px;
-  background-color: #effffe;
+  background-color: #222;
   box-shadow: 1px 1px 12px #000;
   transform: preserve-3d;
   perspective: 2000px;
@@ -1418,15 +1418,18 @@ p {
   color: #1076c9;
   font-size: 28px;
   font-weight: bolder;
+  
 }
 
 .content > p {
   margin-bottom: 10px;
+  background-color: #222;
 }
 
 .IMGcard{
   width: 80%;
   margin-left: 10%;
+  background-color: #222;
 }
 
 .IMGlogo{
@@ -1514,6 +1517,15 @@ p {
 }
 .icon:has(.fa-github) {
   --color: #333;
+}
+
+.titulo{
+  font-size: 50px;
+  font-style: italic;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: #ea8832cb;
 }
 
 
