@@ -190,7 +190,7 @@ p {
  */
 #fh5co-home {
   min-height: 700px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
+  background: #ffffff5b url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-home .flexslider {
   border: none;
@@ -269,7 +269,7 @@ p {
 
 .fh5co-main-nav {
   position: relative;
-  background: #fff;
+  background-color: #222;
 }
 .fh5co-main-nav.fh5co-shadow {
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
@@ -283,7 +283,7 @@ p {
   left: 0;
   height: 2px;
   width: 100%;
-  background: #e6e6e6;
+  background: #e6e6e661;
 }
 .fh5co-main-nav:before {
   top: 2px;
@@ -1353,5 +1353,168 @@ p {
 .row-padded {
   padding-bottom: 40px;
 }
+
+
+.imageGif{
+  width: 70%;
+  margin-left: 10%;
+  
+  
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/cover.png);
+  background-size: cover;
+  transform-origin: 0;
+  box-shadow: 1px 1px 12px #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.book {
+  position: relative;
+  width: 260px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #effffe;
+  box-shadow: 1px 1px 12px #000;
+  transform: preserve-3d;
+  perspective: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+}
+
+.book:hover .cover {
+  transition: all 0.5s;
+  transform: rotatey(-80deg);
+}
+
+.cover > p {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.cover > h2 > span {
+  color: #1076c9;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.content > p {
+  margin-bottom: 10px;
+}
+
+.IMGcard{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.IMGlogo{
+  width: 40%;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon {
+  text-decoration: none;
+  
+  border-radius: 14px;
+  /* background-color: hsla(209 20% 70% / 20%); */ /* For dark theme */
+  background-color: #ffffff58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.icon > i {
+  color: #2dd4bf;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+
+.icon:hover > i {
+  scale: 1.2;
+  color: #f1f1f1;
+}
+
+.icon:before {
+  background: var(--color);
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+}
+
+.icon:hover:before {
+  animation: slide 0.7s forwards;
+}
+
+@keyframes slide {
+  50% {
+    left: 10%;
+    top: -40%;
+  }
+
+  100% {
+    left: -15%;
+    top: -15%;
+  }
+}
+
+.icon:has(.fa-instagram) {
+  --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+.icon:has(.fa-linkedin-in) {
+  --color: #0077b5;
+}
+.icon:has(.fa-youtube) {
+  --color: #ff0000;
+}
+.icon:has(.fa-x-twitter) {
+  --color: #1da1f2;
+}
+.icon:has(.fa-github) {
+  --color: #333;
+}
+
 
 /*# sourceMappingURL=style.css.map */
